@@ -1,0 +1,158 @@
+.company {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .company-bg-img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+    }
+    
+    .companycetner {
+        position: absolute;
+        left: 0;
+        top: 15.7vh;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 58.67vw;
+        z-index: 99;
+        opacity: 0;
+    }
+    .showcenter {
+        -webkit-animation: fade-in 1.2s ease-in-out 2s ;
+        animation: fade-in 1.2s ease-in-out 2s ;
+        animation-fill-mode: forwards;
+    }
+    @-webkit-keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    .companytitle {
+        width: 16.5vw;
+        position: absolute;
+        right: 23.42vw;
+        top: 16.87vh;
+        z-index: 999;
+        opacity: 0;
+    }
+    .showcompanytitle {
+        -webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s ;
+        animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s ;
+        animation-fill-mode: forwards;
+    }
+    .showcompanycentertitle {
+        -webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s ;
+        animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s ;
+        animation-fill-mode: forwards;
+    }
+    .showcompanyinstro {
+        -webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s ;
+        animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s ;
+        animation-fill-mode: forwards;
+    }
+    @-webkit-keyframes slide-in-bottom {
+        0% {
+          -webkit-transform: translateY(40px);
+                  transform: translateY(40px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-in-bottom {
+        0% {
+          -webkit-transform: translateY(40px);
+                  transform: translateY(40px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    .companycentettitle {
+        width: 32.56vw;
+        position: absolute;
+        left: 33.29vw;
+        top: 27vh;
+        z-index: 999;
+        opacity: 0;
+    }
+    .companycenterinstro {
+        width: 34.61vw;
+        position: absolute;
+        left: 34.21vw;
+        top: 32.91vh;
+        z-index: 999;
+        opacity: 0;
+    }
+}
+.companyPageMove {
+    -webkit-animation: kenburns-top-right 3s ease-out both;
+    animation: kenburns-top-right 3s ease-out both;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes kenburns-top-right {
+    0% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: 10% 16%;
+              transform-origin: 84% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.1) translate(20px, -15px);
+              transform: scale(1.1) translate(20px, -15px);
+      -webkit-transform-origin: right top;
+              transform-origin: right top;
+    }
+  }
+  @keyframes kenburns-top-right {
+    0% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: 84% 16%;
+              transform-origin: 84% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.1) translate(20px, -15px);
+              transform: scale(1.1) translate(20px, -15px);
+      -webkit-transform-origin: right top;
+              transform-origin: right top;
+    }
+  }
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

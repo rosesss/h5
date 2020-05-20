@@ -1,0 +1,291 @@
+.bgMove {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+}
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.eliteEnterprise {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        // background: url('../../assets/images/honorbg.jpeg');
+        // background-size: cover;
+    .goHomeImg {
+        width: 0.44rem;
+        height: 0.41rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 0.54rem;
+        margin-top: 0.3rem;
+    }
+    .honorbg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .honorbgMove {
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation-fill-mode: forwards;
+    }
+    @-webkit-keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .honorcenter {
+        position: absolute;
+        top: 14vw;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 139.43vw;
+        z-index: 99;
+        opacity: 0;
+      }
+      .maskMove {
+        -webkit-animation: fade-in 2s ease-out 1s ;
+        animation: fade-in 2s ease-out 1s ;
+        animation-fill-mode: forwards;
+      }
+      @-webkit-keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .honortitle {
+        width: 35.26vw;
+        position: absolute;
+        left: 32.34vw;
+        top: 26.58vw ;
+        z-index: 999;
+        opacity: 0;
+      }
+      .honortitleshow {
+        -webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s ;
+        animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s ;
+        animation-fill-mode: forwards;
+      }
+      @-webkit-keyframes slide-in-bottom {
+        0% {
+          -webkit-transform: translateY(40px);
+                  transform: translateY(40px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-in-bottom {
+        0% {
+          -webkit-transform: translateY(40px);
+                  transform: translateY(40px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      .honor-logo-img {
+        width: 75.8vw;
+        position: absolute;
+        left: 12.3vw ;
+        top: 52.66vw;
+        z-index: 999;
+        opacity: 0;
+      }
+      .honorlogoshow {
+        -webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s ;
+        animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s ;
+        animation-fill-mode: forwards;
+      }
+      .honornum1show {
+        -webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s ;
+        animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s ;
+        animation-fill-mode: forwards;
+      }
+      .honornum2show {
+        -webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s ;
+        animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s ;
+        animation-fill-mode: forwards;
+      }
+      .honornum3show {
+        -webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s ;
+        animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s ;
+        animation-fill-mode: forwards;
+      }
+      .companyonstro1 {
+        position: absolute;
+        left: 25.95vw;
+        top: 55vh;
+        width: 39vw;
+        z-index: 999;
+        opacity: 0;
+    }
+    .companyonstro2 {
+        position: absolute;
+        left: 25.95vw;
+        top: 57vh;
+        width: 54vw;
+        z-index: 999;
+        opacity: 0;
+    }
+    .companyonstro3 {
+        position: absolute;
+        left: 25.95vw;
+        top: 62.5vh;
+        width: 55vw;
+        z-index: 999;
+        opacity: 0;
+    }
+
+
+    .moveTitle {
+        -webkit-animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation-fill-mode: forwards;
+    }
+    /* ----------------------------------------------
+ * Generated by Animista on 2020-5-15 0:59:13
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand-fwd-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand-fwd-top {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(-500px);
+              transform: translateZ(-700px) translateY(-500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd-top {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(-500px);
+              transform: translateZ(-700px) translateY(-500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  
+     .honorList {
+         position: absolute;
+         top: 6.3rem;
+         font-size: 0.2rem;
+        font-family:SourceHanSerifCN-SemiBold;
+        line-height: 0.36rem;
+        color:rgba(255,255,255,1);
+        width: 100%;
+        .honorItem {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            margin-top: 0.2rem;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            span {
+                color: #BC955C;
+                font-size: 0.42rem;
+            }
+        }
+        .honorMoveItem {
+            -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-fill-mode: forwards;
+        }
+        @-webkit-keyframes focus-in-expand {
+            0% {
+            letter-spacing: -0.5em;
+            -webkit-filter: blur(12px);
+                    filter: blur(12px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-filter: blur(0px);
+                    filter: blur(0px);
+            opacity: 1;
+            }
+        }
+        @keyframes focus-in-expand {
+            0% {
+            letter-spacing: -0.5em;
+            -webkit-filter: blur(12px);
+                    filter: blur(12px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-filter: blur(0px);
+                    filter: blur(0px);
+            opacity: 1;
+            }
+        }
+  
+     }
+  
+}

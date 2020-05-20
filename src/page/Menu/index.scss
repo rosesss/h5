@@ -1,0 +1,284 @@
+.menu {
+    height: 100%;
+    width: 100%;
+    background: #37223A;
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    // margin-left: 11vw;
+    // margin-top: 11vw;
+    .menu-page {
+        padding: 11vw;
+        height: 100%;
+    }
+    .line-img {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 20vh;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+}
+.menuShow {
+    display: block;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    @-webkit-keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+}
+
+.closeMenu {
+    -webkit-animation: fade-out 1s ease-out both;
+    animation: fade-out 1s ease-out both;
+    @-webkit-keyframes fade-out {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes fade-out {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+}
+
+.menuItem,.menuItem2, .menuItem3,.menuItem4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 22%;
+    background: #E1B77E;
+    // box-shadow: #37223A
+    box-shadow: 0px 0px -10px #37223A;
+    
+    .menu-left {
+        flex: 5;
+        height: 100%;
+        position: relative;
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99;
+        }
+        .mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .text {
+            color: #E1B77E;
+            font-size: 14px;
+            z-index: 999;
+            position: absolute;
+            left: 7vw;
+            top: 7vh;
+            
+        }
+      
+        .showClear {
+            -webkit-animation: fade-out 0.5s ease-out both;
+	          animation: fade-out 0.5s ease-out both;
+        }
+        @-webkit-keyframes fade-out {
+            0% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
+          @keyframes fade-out {
+            0% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
+        .desctext {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99;
+            p {
+                color: #E1B77E;
+                font-size: 0.3rem;
+                line-height: 1.7rem;
+                margin-left: 30px;
+                text-align: left;
+            }
+        }
+       
+    }
+    .menu-right {
+        flex: 5;
+        height:100%;
+        margin-left: -18vw;
+        position: relative;
+        .mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+            img {
+                position: absolute;
+                left: 1px;
+                top: -2px;
+                width: 102%;
+                height: 103%;
+            }
+        }
+        .text {
+            color: #E1B77E;
+            font-size: 14px;
+            z-index: 9999;
+            position: absolute;
+            right: 7vw;
+            top: 7vh;
+        }
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99;
+        }
+    }
+    .showimg1,.showimg2,.showimg3,.showimg4,.showimg5,.showimg6,.showimg7 {
+        z-index: 99 !important;
+    }
+}
+
+.menuItemLeftMove {
+  -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.menuItemRightMove {
+    -webkit-animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.menuItem2, .menuItem4 {
+    .menu-left {
+        .mask {
+            img {
+                width: 103%;
+                height: 102%;
+                position: absolute;
+                left: -4px;;
+                top: -2px;
+            }
+        }
+    }
+}
+.menuItem4 {
+    // .menu-right {
+    //     position: relative;
+    //     img {
+    //         position: absolute;
+    //         left: 0;
+    //         top: 0;
+    //         z-index: -1;
+    //     }
+    //         .text {
+    //             color: #E1B77E;
+    //             font-size:14px;
+    //             position: absolute;
+    //             z-index: 999;
+    //         }
+    // }
+}

@@ -1,0 +1,349 @@
+.mapPage {
+  background: #37223A;
+  height: 100%;
+  position: relative;
+  .insideMap {
+    // padding-bottom: 11.52vw;
+    // padding-left: 10vw;
+    // padding: 2.7vw 7.8vw;
+    width: 100%;
+}
+.map-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+        .map-geography {
+          width: 25vw;
+          margin-top: 4.5vw;
+          margin-right: 6.5vw;
+          opacity: 0;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+    }
+    .moveHeaderImg {
+      -webkit-animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+	    animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+      animation-fill-mode: forwards;
+    }
+    @-webkit-keyframes slide-in-right {
+      0% {
+        -webkit-transform: translateX(1000px);
+                transform: translateX(1000px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    @keyframes slide-in-right {
+      0% {
+        -webkit-transform: translateX(1000px);
+                transform: translateX(1000px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+      }
+    }
+}
+.map-img {
+    padding: 10px;
+    // margin-top: 26px;
+    opacity: 0;
+    position: relative;
+    .mapimgs {
+        width: 84vw;
+        margin-left: 5.5vw;
+        // opacity: 0;
+    }
+    
+    .map-logo-img {
+        position: absolute;
+        right: 27.3vw;
+        top: 13vh;
+        width: 13.5vw;
+        z-index: 999;
+        opacity: 0;
+    }
+    .map-logo-show {
+      -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      animation-fill-mode: forwards;
+    }
+    .map-logo-move {
+      opacity: 1;
+      -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+      animation: pulsate-bck 0.5s ease-in-out infinite both;
+    }
+    @-webkit-keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    /**
+    * ----------------------------------------
+    * animation pulsate-bck
+    * ----------------------------------------
+    */
+    @-webkit-keyframes pulsate-bck {
+        0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        }
+        50% {
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+        }
+        100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        }
+    }
+    @keyframes pulsate-bck {
+        0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        }
+        50% {
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+        }
+        100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        }
+    }
+
+}
+.logoprompt {
+  text-align: right;
+  margin-right: 3vw;
+  font-size: 14px;
+  width: 40.26vw;
+  position: absolute;
+  right: 7vw;
+  opacity: 0;
+}
+
+.moveLogoPrompt {
+  -webkit-animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s ;
+  animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s ;
+  animation-fill-mode: forwards;
+}
+
+.mapMoveRight {
+  -webkit-animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s ;
+  animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s ;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes slide-in-right {
+0% {
+  -webkit-transform: translateX(1000px);
+          transform: translateX(1000px);
+  opacity: 0;
+}
+100% {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+}
+@keyframes slide-in-right {
+0% {
+  -webkit-transform: translateX(1000px);
+          transform: translateX(1000px);
+  opacity: 0;
+}
+100% {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+}
+.map-desc {
+    margin-top: 4.2vw;
+    margin-left: 10vw;
+    width: 28vw;
+    opacity: 0;
+}
+.mapDescMove {
+  -webkit-animation: slide-in-left 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+	animation: slide-in-left 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.map-advantage {
+    margin-top: 4.2vw;
+    width: 100%;
+    .addItem1 {
+      -webkit-animation: slide-in-left 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.7s;
+      animation: slide-in-left 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.7s;
+      animation-fill-mode: forwards;
+    }
+    .addItem2 {
+      -webkit-animation: slide-in-left 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.9s;
+      animation: slide-in-left 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.9s;
+      animation-fill-mode: forwards;
+    }
+    .addItem3 {
+      -webkit-animation: slide-in-left 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.1s;
+      animation: slide-in-left 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.1s;
+      animation-fill-mode: forwards;
+    }
+    .addItem4 {
+      -webkit-animation: slide-in-left 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.3s;
+      animation: slide-in-left 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.3s;
+      animation-fill-mode: forwards;
+    }
+    @-webkit-keyframes slide-in-left {
+      0% {
+        -webkit-transform: translateX(-1000px);
+                transform: translateX(-1000px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    @keyframes slide-in-left {
+      0% {
+        -webkit-transform: translateX(-1000px);
+                transform: translateX(-1000px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    .advantageItem {
+        width: 45vw;
+        margin-left: 10vw;
+        opacity: 0;
+        .signimg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .advantageItem2 {
+      opacity: 0;
+      width: 29.2vw;
+      margin-left: 10vw;
+      .signimg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .advantageItem3 {
+      opacity: 0;
+      width: 58.8vw;
+      margin-left: 10vw;
+      .signimg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .advantageItem4 {
+      opacity: 0;
+      width: 35.7vw;
+      margin-left: 10vw;
+      .signimg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+   
+}
+.map-bottom-box {
+  // margin-top: -77px;
+  // margin-top: 
+  position: absolute;
+  bottom: 30px;
+  .line-img {
+      width: 100%;
+  }
+}
+
+}
+.mapMoveAll {
+    // background: #37223A;
+    // height: 100%;
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+    // z-index: 999;
+    // overflow-y: auto;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            @-webkit-keyframes fade-in {
+                0% {
+                  opacity: 0;
+                }
+                100% {
+                  opacity: 1;
+                }
+              }
+              @keyframes fade-in {
+                0% {
+                  opacity: 0;
+                }
+                100% {
+                  opacity: 1;
+                }
+              }
+    
+   
+}

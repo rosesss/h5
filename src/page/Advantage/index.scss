@@ -1,0 +1,363 @@
+.advantage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .advantageMask {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        // z-index: -1;
+    }
+    .advantage-title {
+        position: relative;
+        img {
+            width: 19.47vw;
+            position: absolute;
+            top: 3.2vw;
+            right: 6.8vw;
+            opacity: 0;
+        }
+        .advantageTitleMove {
+            -webkit-animation: slide-in-right 1.2s ease-in ;
+            animation: slide-in-right 1.2s ease-in ;
+            animation-fill-mode: forwards;
+        }
+        @-webkit-keyframes slide-in-right {
+            0% {
+              -webkit-transform: translateX(1000px);
+                      transform: translateX(1000px);
+              opacity: 0;
+            }
+            100% {
+              -webkit-transform: translateX(0);
+                      transform: translateX(0);
+              opacity: 1;
+            }
+          }
+          @keyframes slide-in-right {
+            0% {
+              -webkit-transform: translateX(1000px);
+                      transform: translateX(1000px);
+              opacity: 0;
+            }
+            100% {
+              -webkit-transform: translateX(0);
+                      transform: translateX(0);
+              opacity: 1;
+            }
+          }
+    }
+    .circleBox {
+        // width: 23.9vw;
+        position: absolute;
+        top: 34.21vw;
+        left: -30vw;
+        .bigCircle {
+            width: 109vw;
+            // margin-left: -8.79vw;
+            position: relative;
+            .big-out-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0;
+            }
+            .showBigcircle {
+                -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 5.5s;
+	                animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 5.5s;
+                    animation-fill-mode: forwards;
+            }
+            @-webkit-keyframes fade-in {
+                0% {
+                  opacity: 0;
+                }
+                100% {
+                  opacity: 1;
+                }
+              }
+              @keyframes fade-in {
+                0% {
+                  opacity: 0;
+                }
+                100% {
+                  opacity: 1;
+                }
+              }
+            .big-line-img {
+                width: 90%;
+                height: 90%;
+                object-fit: cover;
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                opacity: 0;
+            }
+            .lineIimgshow {
+                -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s;
+                animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s;
+                animation-fill-mode: forwards;
+            }
+            .advantageList {
+                position: absolute;
+                left: 38.4vw;
+                top: 4%;
+                z-index: 9999;
+                .advantageItemImg {
+                    z-index: 999;
+                    .spacemask {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        z-index: 999;
+                    }
+                    .nomask {
+                        display: none;
+                    }
+                }
+                .advantageItemImg:nth-of-type(1) {
+                    width: 26.42vw;
+                    position: absolute;
+                    left: 0;
+                    top: 0.3vh;
+                    opacity: 0;
+                    z-index: 10;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .showImg {
+                    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 5s;
+	                animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 5s;
+                    animation-fill-mode: forwards;
+                }
+                @-webkit-keyframes fade-in {
+                    0% {
+                      opacity: 0;
+                    }
+                    100% {
+                      opacity: 1;
+                    }
+                  }
+                  @keyframes fade-in {
+                    0% {
+                      opacity: 0;
+                    }
+                    100% {
+                      opacity: 1;
+                    }
+                  }
+                
+               
+                .advantageItemImg:nth-of-type(2) {
+                    opacity: 0;
+                    width: 28.51vw;
+                    position: absolute;
+                    left: 22.9vw;
+                    top: 0.8vh;
+                    -moz-transform:rotate(2deg);
+                    -webkit-transform:rotate(2deg);
+                    -o-transform:rotate(2deg);
+                    -ms-transform:rotate(2deg);
+                    transform:rotate(2deg);
+                    z-index: 10;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .advantageItemImg:nth-of-type(3) {
+                    opacity: 0;
+                    width: 30.6vw;
+                    position: absolute;
+                    left: 36vw;
+                    top: 8.3vh;
+                    z-index: 10;
+                    -moz-transform:rotate(4deg);
+                    -webkit-transform:rotate(4deg);
+                    -o-transform:rotate(4deg);
+                    -ms-transform:rotate(4deg);
+                    transform:rotate(4deg);
+                   
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .advantageItemImg:nth-of-type(4) {
+                    opacity: 0;
+                    width: 25.8vw;
+                    position: absolute;
+                    left: 40.9vw;
+                    top: 22vh;
+                    z-index: 10;
+                    -moz-transform:rotate(4deg);
+                    -webkit-transform:rotate(4deg);
+                    -o-transform:rotate(4deg);
+                    -ms-transform:rotate(4deg);
+                    transform:rotate(4deg);
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .advantageItemImg:nth-of-type(5) {
+                    opacity: 0;
+                    width: 30.6vw;
+                    position: absolute;
+                    left: 31.3vw;
+                    top: 34.5vh;
+                    z-index: 10;
+                    -moz-transform:rotate(7deg);
+                    -webkit-transform:rotate(7deg);
+                    -o-transform:rotate(7deg);
+                    -ms-transform:rotate(7deg);
+                    transform:rotate(7deg);
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .advantageItemImg:nth-of-type(6) {
+                    opacity: 0;
+                    width: 28.47vw;
+                    position: absolute;
+                    right: -44vw;
+                    top: 40.5vh;
+                    z-index: 11;
+                    -moz-transform:rotate(10deg);
+                    -webkit-transform:rotate(10deg);
+                    -o-transform:rotate(10deg);
+                    -ms-transform:rotate(10deg);
+                    transform:rotate(10deg);
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .advantageItemImg:nth-of-type(7) {
+                    opacity: 0;
+                    width: 27vw;
+                    position: absolute;
+                    left: -4.5vh;
+                    top: 40.6vh;
+                    -moz-transform:rotate(10deg);
+                    -webkit-transform:rotate(10deg);
+                    -o-transform:rotate(10deg);
+                    -ms-transform:rotate(10deg);
+                    transform:rotate(10deg);
+                    z-index: 11;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .bolidcircle {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .centerCircle {
+                    width: 23.9vw;
+                    object-fit: cover;
+                    opacity: 0;
+                }
+                .showcentercircle {
+                    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s;
+                    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s;
+                    animation-fill-mode: forwards;
+                }
+                .closecircle {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    width: 16.15vw;
+                    object-fit: cover;
+                    opacity: 0;
+                }
+                .circlelogo {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    width: 6.78vw;
+                    object-fit: cover;
+                    opacity: 0;
+                }
+                .showclosecircle {
+                    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s;
+                    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s;
+                    animation-fill-mode: forwards;
+                }
+                @-webkit-keyframes scale-in-center {
+                    0% {
+                      -webkit-transform: scale(0);
+                              transform: scale(0);
+                      opacity: 1;
+                    }
+                    100% {
+                      -webkit-transform: scale(1);
+                              transform: scale(1);
+                      opacity: 1;
+                    }
+                  }
+                  @keyframes scale-in-center {
+                    0% {
+                      -webkit-transform: scale(0);
+                              transform: scale(0);
+                      opacity: 1;
+                    }
+                    100% {
+                      -webkit-transform: scale(1);
+                              transform: scale(1);
+                      opacity: 1;
+                    }
+                  }
+                .logoShow {
+                    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.2s;
+                    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.2s;
+                    animation-fill-mode: forwards;
+                }
+                @-webkit-keyframes fade-in {
+                    0% {
+                      opacity: 0;
+                    }
+                    100% {
+                      opacity: 1;
+                    }
+                  }
+                  @keyframes fade-in {
+                    0% {
+                      opacity: 0;
+                    }
+                    100% {
+                      opacity: 1;
+                    }
+                  }
+            }
+        }
+    }
+}

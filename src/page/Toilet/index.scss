@@ -1,0 +1,189 @@
+.toilet {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    .dttitle {
+        width: 32.6vw;
+        position: absolute;
+        right: 5.3vw;
+        top: 2.5vw;
+        opacity: 0;
+        z-index: 99;
+    }
+    .dtmove {
+        -webkit-animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s ;
+	    animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s ;
+        animation-fill-mode: forwards;
+    }
+    @-webkit-keyframes slide-in-right {
+        0% {
+          -webkit-transform: translateX(1000px);
+                  transform: translateX(1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-in-right {
+        0% {
+          -webkit-transform: translateX(1000px);
+                  transform: translateX(1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      .dttbg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+      }
+      .movedtBg {
+        -webkit-animation: kenburns-top 1.5s ease-out 1s;
+        animation: kenburns-top 1.5s ease-out 1s;
+        animation-fill-mode: forwards;
+      }
+      @-webkit-keyframes kenburns-top {
+        0% {
+        -webkit-transform: scale(1) translateY(0);
+                transform: scale(1) translateY(0);
+        -webkit-transform-origin: 40% 16%;
+                transform-origin: 40% 16%;
+        }
+        100% {
+        -webkit-transform: scale(1.1) translateY(-15px);
+                transform: scale(1.1) translateY(-15px);
+        -webkit-transform-origin: top;
+                transform-origin: top;
+        }
+    }
+    @keyframes kenburns-top {
+        0% {
+        -webkit-transform: scale(1) translateY(0);
+                transform: scale(1) translateY(0);
+        -webkit-transform-origin: 40% 16%;
+                transform-origin: 40% 16%;
+        }
+        100% {
+        -webkit-transform: scale(1.1) translateY(-15px);
+                transform: scale(1.1) translateY(-15px);
+        -webkit-transform-origin: top;
+                transform-origin: top;
+        }
+    }
+    .toiletInstro {
+        position: absolute;
+        left: 0;
+        bottom: 3.6vw;
+        width: 36.78vw;
+        height: 55.73vh;
+        .dtbottomnot {
+            width: 38.46vw;
+            position: absolute;
+            left: 0;;
+            top: 0;
+            opacity: 0;
+
+        }
+        .bottomtolietright {
+            width: 38.4vw;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+        }
+        .dtdescbottom {
+            width: 25.8vw;
+            position: absolute;
+            left: 2.5vw;
+            bottom: 25vw;
+            opacity: 0;
+        }
+        .tolietspace {
+            width: 26.6vw;
+            position: absolute;
+            left: 2vw;
+            top: 55vw;
+            opacity: 0;
+        }
+        .tolietman {
+            width: 33.8vw;
+            position: absolute;
+            left: 2vw;
+            top: 60vw;
+            opacity: 0;
+        }
+        .tolietwoman {
+            width: 24.7vw;
+            position: absolute;
+            left: 2vw;
+            top: 65vw;
+            opacity: 0;
+        }
+        .tolietrightmove {
+            -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+	        animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+            animation-fill-mode: forwards;
+        }
+        .dtbottompngMove {
+            -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+	        animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+            animation-fill-mode: forwards;
+        }
+        .tolietspacemove {
+            -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.3s;
+	        animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.3s;
+            animation-fill-mode: forwards;
+        }
+        .tolietmanmove {
+            -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.6s;
+	        animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.6s;
+            animation-fill-mode: forwards;
+        }
+        .tolietwowanmove {
+            -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.9s;
+	        animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.9s;
+            animation-fill-mode: forwards;
+        }
+        .dtdescMove {
+            -webkit-animation: slide-in-right 1s ease-in 2.5s ;
+            animation: slide-in-right 1s ease-in 2.5s ;
+            animation-fill-mode: forwards;
+        }
+        @-webkit-keyframes slide-in-left {
+            0% {
+              -webkit-transform: translateX(-1000px);
+                      transform: translateX(-1000px);
+              opacity: 0;
+            }
+            100% {
+              -webkit-transform: translateX(0);
+                      transform: translateX(0);
+              opacity: 1;
+            }
+          }
+          @keyframes slide-in-left {
+            0% {
+              -webkit-transform: translateX(-1000px);
+                      transform: translateX(-1000px);
+              opacity: 0;
+            }
+            100% {
+              -webkit-transform: translateX(0);
+                      transform: translateX(0);
+              opacity: 1;
+            }
+          }
+    }
+}
+
+  

@@ -1,0 +1,138 @@
+.leftbuliding {
+    // background: #37223A;
+    // height: 100vh;
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+    width: 100%;
+    height: 100%;
+    // height: 100%;
+    position: relative;
+    // z-index: 999;
+    .gohome {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        // width: 0.44rem;
+        // height: 0.41rem;
+        // padding: 0.5rem 0.54rem 0;
+    }
+    
+    .business {
+        margin-left: 11.7vw;
+        width: 76.32vw;
+        padding-top: 23.42vw;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+        }
+        .imgMove1 {
+            -webkit-animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+            animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+            animation-fill-mode: forwards;
+        }
+        @-webkit-keyframes slide-in-right {
+            0% {
+              -webkit-transform: translateX(1000px);
+                      transform: translateX(1000px);
+              opacity: 0;
+            }
+            100% {
+              -webkit-transform: translateX(0);
+                      transform: translateX(0);
+              opacity: 1;
+            }
+          }
+          @keyframes slide-in-right {
+            0% {
+              -webkit-transform: translateX(1000px);
+                      transform: translateX(1000px);
+              opacity: 0;
+            }
+            100% {
+              -webkit-transform: translateX(0);
+                      transform: translateX(0);
+              opacity: 1;
+            }
+          }
+
+        .titleMove1 {
+            -webkit-animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s ;
+            animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s ;
+            animation-fill-mode: forwards;
+        }
+        .imgMove2 {
+            -webkit-animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s ;
+            animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s ;
+            animation-fill-mode: forwards;
+        }
+        .titleMove2 {
+            -webkit-animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.8s ;
+            animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.8s ;
+            animation-fill-mode: forwards;
+        }
+
+        p {
+            font-size: 14px;
+            font-family:SourceHanSerifCN-SemiBold;
+            line-height: 20px;
+            color:rgba(188,149,92,1);
+            margin: 0;
+            text-align: right;
+            opacity: 0;
+        }
+        .businessTitle1,.businessTitle2 {
+            -webkit-animation: fade-in-bck 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) ;
+            animation: fade-in-bck 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) ;
+            animation-fill-mode: forwards;
+        }
+        #businessTitle2 {
+            margin-top: 2vh;
+        }
+        @-webkit-keyframes fade-in-bck {
+            0% {
+            -webkit-transform: translateZ(80px);
+                    transform: translateZ(80px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+            opacity: 1;
+            }
+        }
+        @keyframes fade-in-bck {
+            0% {
+            -webkit-transform: translateZ(80px);
+                    transform: translateZ(80px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+            opacity: 1;
+            }
+        }
+    }
+   
+    .bottom-line {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+        // .btnMove {
+
+        // }
+        .back-btn {
+            position: absolute;
+            bottom: 11vw;;
+            right: 10vw;
+            font-size: 0.3rem;
+            font-family:SourceHanSerifCN-SemiBold;
+            line-height: 0.36rem;
+            color:rgba(255,255,255,1);
+        }
+    }
+}

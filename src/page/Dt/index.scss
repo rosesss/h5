@@ -1,0 +1,227 @@
+.dt {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .toiletitle {
+        width: 32.6vw;
+        position: absolute;
+        right: 5.3vw;
+        top: 2.5vw;
+        opacity: 0;
+        z-index: 99;
+    }
+    .titlemove {
+        -webkit-animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s ;
+	    animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s ;
+        animation-fill-mode: forwards;
+    }
+    @-webkit-keyframes slide-in-right {
+        0% {
+          -webkit-transform: translateX(1000px);
+                  transform: translateX(1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-in-right {
+        0% {
+          -webkit-transform: translateX(1000px);
+                  transform: translateX(1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      .toiletbg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+      }
+      .moveBg {
+        -webkit-animation: kenburns-top 1.5s ease-out 1s;
+        animation: kenburns-top 1.5s ease-out 1s;
+        animation-fill-mode: forwards;
+      }
+      @-webkit-keyframes kenburns-top {
+        0% {
+        -webkit-transform: scale(1) translateY(0);
+                transform: scale(1) translateY(0);
+        -webkit-transform-origin: 40% 16%;
+                transform-origin: 40% 16%;
+        }
+        100% {
+        -webkit-transform: scale(1.1) translateY(-15px);
+                transform: scale(1.1) translateY(-15px);
+        -webkit-transform-origin: top;
+                transform-origin: top;
+        }
+    }
+    @keyframes kenburns-top {
+        0% {
+        -webkit-transform: scale(1) translateY(0);
+                transform: scale(1) translateY(0);
+        -webkit-transform-origin: 40% 16%;
+                transform-origin: 40% 16%;
+        }
+        100% {
+        -webkit-transform: scale(1.1) translateY(-15px);
+                transform: scale(1.1) translateY(-15px);
+        -webkit-transform-origin: top;
+                transform-origin: top;
+        }
+    }
+    .toiletInstro {
+        position: absolute;
+        left: 0;
+        bottom: -5.4vw;
+        width: 36.78vw;
+        height: 55.73vh;
+        .heightfloor {
+            position: absolute;
+            left: 4vw;
+            top: 39vw;
+            width: 17.5vw;
+            z-index: 99;
+            opacity: 0;
+        }
+        .downfloor {
+            position: absolute;
+            left: 4vw;
+            top: 45.5vw;
+            width: 17.5vw;
+            z-index: 99;
+            opacity: 0;
+        }
+        .dtlong {
+            position: absolute;
+            left: 4vw;
+            top: 54vw;
+            width: 24.1vw;
+            z-index: 99;
+            opacity: 0;
+        }
+        .dtwidth,.dtheight {
+            position: absolute;
+            left: 4vw;
+            top: 59vw;
+            width: 9.9vw;
+            z-index: 99;
+            opacity: 0;
+        }
+        .dtheight {
+            position: absolute;
+            left: 4vw;
+            top: 64vw;
+        }
+        .dtweight {
+            position: absolute;
+            left: 4vw;
+            top: 69vw;
+            width: 21.18vw;
+            z-index: 99;
+            opacity: 0;
+        }
+        .heightmove {
+            -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.3s ;
+            animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.3s;
+            animation-fill-mode: forwards;
+        }
+        .downmove {
+            -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.6s ;
+            animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.6s;
+            animation-fill-mode: forwards;
+        }
+        .dtspacemove {
+            -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.9s ;
+            animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.9s;
+            animation-fill-mode: forwards;
+        }
+        .dtwidthmove {
+            -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.2s ;
+            animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.2s;
+            animation-fill-mode: forwards;
+        }
+        .dtheightmove {
+            -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s ;
+            animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s;
+            animation-fill-mode: forwards;
+        }
+        .dtweightmove {
+            -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.8s ;
+            animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.8s;
+            animation-fill-mode: forwards;
+        }
+        
+        @-webkit-keyframes slide-in-left {
+            0% {
+              -webkit-transform: translateX(-1000px);
+                      transform: translateX(-1000px);
+              opacity: 0;
+            }
+            100% {
+              -webkit-transform: translateX(0);
+                      transform: translateX(0);
+              opacity: 1;
+            }
+          }
+          @keyframes slide-in-left {
+            0% {
+              -webkit-transform: translateX(-1000px);
+                      transform: translateX(-1000px);
+              opacity: 0;
+            }
+            100% {
+              -webkit-transform: translateX(0);
+                      transform: translateX(0);
+              opacity: 1;
+            }
+          }
+          
+        .bottomnot {
+            width: 34.46vw;
+            position: absolute;
+            left: 0;;
+            top: 0;
+            opacity: 0;
+        }
+        .bottomright {
+            position: absolute;
+            top: 0;
+            width: 34.46vw;
+            opacity: 0;
+        }
+        .bottomrightmove {
+            -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s ;
+            animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s ;
+            animation-fill-mode: forwards;
+        }
+        .descbottom {
+            width: 25.8vw;
+            position: absolute;
+            left: 2.5vw;
+            bottom: 25vw;
+            opacity: 0;
+        }
+        .bottompngMove {
+            -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s ;
+            animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s ;
+            animation-fill-mode: forwards;
+        }
+        .toiletdescMove {
+            -webkit-animation: slide-in-right 1s ease-in 2.5s ;
+            animation: slide-in-right 1s ease-in 2.5s ;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+  
