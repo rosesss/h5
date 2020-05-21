@@ -10,6 +10,37 @@ import img6 from '../../assets/images/business2.png';
 import img7 from '../../assets/images/center1.png';
 import img8 from '../../assets/images/center2.png';
 import img9 from '../../assets/images/center3.png';
+const imgData = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
+let loading = false
+
+var promiseAll = imgData.map(function (item, index) {
+    return new Promise(function (resolve, reject) {
+      var img = new Image();
+      img.onload = function () {
+        img.onload = null;
+        resolve(img);
+      };
+      img.error = function () {
+        reject('图片加载失败');
+      };
+      img.src = item;
+    });
+  });
+
+  Promise.all(promiseAll).then(
+    function () {
+      // 图片全部加载完成，进行下一步
+      // todo
+      console.log('success')
+      loading = true
+      const loadings = document.getElementsByClassName('loading')[0];
+      console.log(loadings)
+      loadings.style.display = 'none'
+    },
+    function (err) {
+      console.log(err);
+    }
+  );
 
 class Home extends Component {
     constructor(props) {
@@ -22,6 +53,9 @@ class Home extends Component {
             percent: ''
         }
     }
+
+    
+   
 
     preload() {
         let imgs = [
@@ -57,9 +91,9 @@ class Home extends Component {
         const music = document.getElementById('audio');
         setTimeout(() => {
             home.removeChild(loading)
-            this.setState({
-                loading: false
-            })
+            // this.setState({
+            //     loading: false
+            // })
             // function audioAutoPlay() {
             //     music.play();
             //     document.addEventListener("WeixinJSBridgeReady", function () {
@@ -121,9 +155,9 @@ class Home extends Component {
                     </div>
                 </div>
                 {
-                    !this.state.loading ? 
+                    !loading ? 
                     <div className={showNewPage}>
-                        <Demo loading={this.state.loading} closeModal={() => this.closeModal()} />
+                        <Demo loading={loading} closeModal={() => this.closeModal()} />
                     </div>
                     :''
                 }
